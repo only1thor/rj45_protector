@@ -1,14 +1,14 @@
 
-wall_thickness = 0.4;
+wall_thickness = 0.45;
 
-width = 11.7 + wall_thickness*2;
+width = 11.8 + wall_thickness*2;
 height1 = 6.7 + wall_thickness*2;
 height2 = 8.8 + wall_thickness*2;
 depth = 6;
 taper = 2;
 
 clip_width = 6.3 + wall_thickness*2;
-
+scale([1,1.1,1]) 
 translate([0,(height2/2),0]) cylinder(r=(clip_width/2), h=depth, center=true, $fn=100);
 
 translate([0,(height2-height1)/2,0]) cube([width,height1,depth],center=true);
