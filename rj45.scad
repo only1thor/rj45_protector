@@ -8,7 +8,7 @@ depth = 6;
 taper = 2;
 
 clip_width = 6.3 + wall_thickness*2;
-scale([1,1.1,1]) 
+scale([1,1.25,1]) 
 translate([0,(height2/2),0]) cylinder(r=(clip_width/2), h=depth, center=true, $fn=100);
 
 translate([0,(height2-height1)/2,0]) cube([width,height1,depth],center=true);
